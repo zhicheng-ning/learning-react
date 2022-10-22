@@ -12,15 +12,16 @@
 <script type="text/babel">
 
     // ES6 lexical variable scoping with let
-
+    // var 允许在同一作用域中声明同名的变量，而 let 不可以;
+    // let 在块作用域中有效，有的时候，我们为了降低变量污染的风险，在块作用域中使用 let 来代替 var，这样不会污染块作用域的外部作用域，降低 bug 率，使代码更安全
     var topic = "JavaScript"
 
     if (topic) {
       let topic = "React"
-      console.log('block', topic)
+      console.log('block', topic) // block React
     }
 
-    console.log('global', topic)
+    console.log('global', topic) // block JavaScript
 
 </script>
 </body>

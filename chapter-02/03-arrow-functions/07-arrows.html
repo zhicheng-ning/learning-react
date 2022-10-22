@@ -12,16 +12,14 @@
 <script type="text/babel">
 
     // Function
-
+    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind
     var tahoe = {
-      resorts: ["Kirkwood","Squaw","Alpine","Heavenly","Northstar"],
-      print: function(delay=1000) {
-
-        setTimeout(function() {
-          console.log(this.resorts.join(","))
-        }, delay)
-
-      }
+        resorts: ["Kirkwood", "Squaw", "Alpine", "Heavenly", "Northstar"],
+        print: function (delay = 1000) {
+            setTimeout(function () {
+                console.log(this.resorts.join(","))
+            }, delay)
+        }
     }
 
     tahoe.print()

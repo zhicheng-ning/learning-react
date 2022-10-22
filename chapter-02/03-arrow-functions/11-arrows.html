@@ -14,14 +14,12 @@
     // Arrow Functions know when to use them.
 
     var tahoe = {
-      resorts: ["Kirkwood","Squaw","Alpine","Heavenly","Northstar"],
-      print: function(delay=1000) {
-
-        setTimeout(() => {
-          console.log(this === window)
-        }, delay)
-
-      }
+        resorts: ["Kirkwood", "Squaw", "Alpine", "Heavenly", "Northstar"],
+        print: function (delay = 1000) {
+            setTimeout(() => {
+                console.log(this === window)
+            }, delay)
+        }
     }
 
     tahoe.print(); // true

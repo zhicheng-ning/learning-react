@@ -14,14 +14,12 @@
     // Arrow Functions gone too far, this means window
 
     var tahoe = {
-      resorts: ["Kirkwood","Squaw","Alpine","Heavenly","Northstar"],
-      print: (delay=1000) => {
-
-        setTimeout(() => {
-          console.log(this.resorts.join(","))
-        }, delay)
-
-      }
+        resorts: ["Kirkwood", "Squaw", "Alpine", "Heavenly", "Northstar"],
+        print: (delay = 1000) => {
+            setTimeout(() => {
+                console.log(this.resorts.join(","))
+            }, delay)
+        }
     }
 
     tahoe.print()

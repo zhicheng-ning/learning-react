@@ -13,21 +13,21 @@
 
     // Function
 
-    var lordify = function(firstName, land) {
+    var lordify = function (firstName, land) {
 
-      if (!firstName) {
-        throw new Error('A firstName is required to lordify')
-      }
+        if (!firstName) {
+            throw new Error('A firstName is required to lordify')
+        }
 
-      if (!land) {
-        throw new Error('A lord must have a land')
-      }
+        if (!land) {
+            throw new Error('A lord must have a land')
+        }
 
-      return `${firstName} of ${land}`
+        return `${firstName} of ${land}`
     }
 
-    console.log( lordify("Kelly", "Sonoma") )
-    console.log( lordify("Dave") )
+    console.log(lordify("Kelly", "Sonoma"))
+    console.log(lordify("Dave"))
 
 </script>
 </body>
